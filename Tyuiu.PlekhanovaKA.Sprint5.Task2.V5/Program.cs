@@ -32,7 +32,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task2.V5
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    Console.WriteLine("Введите значение:");
+                    Console.Write("Введите значение:");
                     matrix[i,j]=Convert.ToInt32(Console.ReadLine());
                 }
             }
@@ -40,14 +40,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task2.V5
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************"); 
             string res = ds.SaveToFileTextData(matrix);
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    Console.WriteLine("Введите значение:");
-                    matrix[i, j] = Convert.ToInt32(Console.ReadLine());
-                }
-            }
+            
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Результат: "+File.ReadAllText(res));
         }

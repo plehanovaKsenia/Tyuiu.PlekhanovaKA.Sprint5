@@ -38,7 +38,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task2.V5.Lib
                     {
                         str = str + matrix[i, j];
                     }
-                    if (i != rows - 1)
+                    if (i == rows - 1)
                     {
                         File.AppendAllText(path, str + Environment.NewLine);
                     }
