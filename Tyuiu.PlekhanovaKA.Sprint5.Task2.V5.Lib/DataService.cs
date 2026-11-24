@@ -15,7 +15,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task2.V5.Lib
             }
             int rows= matrix.GetLength(0);
             int columns= matrix.Length/rows;
-            for (int i =0; i<rows; i++)
+            for (int i = 0; i < rows; i++) 
             {
                 for (int j =0; j<columns; j++)
                 {
@@ -25,12 +25,13 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task2.V5.Lib
                     }
                 }
             }
+            File.AppendAllText(path, Environment.NewLine);
             string str = "";
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (j!=columns-1)
+                    if (j != columns - 1)
                     {
                         str = str + matrix[i, j] + ";";
                     }
@@ -38,16 +39,17 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task2.V5.Lib
                     {
                         str = str + matrix[i, j];
                     }
-                    if (i == rows - 1)
+                }
+                    if (i != rows-1)
                     {
                         File.AppendAllText(path, str + Environment.NewLine);
                     }
                     else
                     {
-                        File.AppendAllText(path, str);
+                        File.AppendAllText(path, str );
                     }
                     str = "";
-                }
+                
             }
             return path;
         }
