@@ -17,7 +17,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task1.V21.Lib
             string strY;
             for(int x  = startValue; x <= stopValue; x++)
             {
-                y = Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - Math.Cos(x),2);
+                y = Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - Math.Sin(x),2);
                 strY = Convert.ToString(y);
                 if (x!=stopValue)
                 {
