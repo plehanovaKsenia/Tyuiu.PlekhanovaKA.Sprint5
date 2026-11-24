@@ -11,7 +11,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task1.V21
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Класс File. Запись данных в текстовый файл                        *");
+            Console.WriteLine("* Тема: Класс File. Запись набора данных в текстовый файл                 *");
             Console.WriteLine("* Задание#1                                                               *");
             Console.WriteLine("* Вариант#21                                                              *");
             Console.WriteLine("* Выполнила: Плеханова Ксения Анатольевна | СМАРТб-26-1                   *");
