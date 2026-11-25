@@ -24,7 +24,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task7.V4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = @"C:\Users\New\source\repos\Tyuiu.PlekhanovaKA.Sprint5\DataSprint5\InPutDataFileTask5V24.txt";
+            string path = @"C:\Users\New\source\repos\Tyuiu.PlekhanovaKA.Sprint5\DataSprint5\InPutDataFileTask7V4.txt";
             Console.WriteLine("Данные находятся в файле" + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
