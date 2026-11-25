@@ -1,5 +1,6 @@
 ﻿
 using System.IO;
+using System.Reflection.PortableExecutable;
 using tyuiu.cources.programming.interfaces.Sprint5;
 namespace Tyuiu.PlekhanovaKA.Sprint5.Task5.V24.Lib
 {
@@ -8,15 +9,15 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task5.V24.Lib
         public double LoadFromDataFile(string path)
         {
             double res = 0;
-            using (StreamReader reader = new StreamReader(path))
+            string[] line =File.ReadAllText(path).Split(' ');
+            foreach(string str in line)
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                double x = Convert.ToDouble(str.Replace('.', ','));
+                if (x - Convert.ToInt32(x) == 0 && x / 10 > 0)
                 {
-                    double x = Convert.ToDouble(line.Replace('.',','));
-                    if (x-Convert.ToInt32(x)==0 && x/10>0)
                     res += x;
                 }
+
             }
             return res;
         }
