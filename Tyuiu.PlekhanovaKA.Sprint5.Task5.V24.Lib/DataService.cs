@@ -13,7 +13,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task5.V24.Lib
             foreach(string str in line)
             {
                 double x = Convert.ToDouble(str.Replace('.', ','));
-                if (x - Convert.ToInt32(x) == 0 && x / 10 > 0)
+                if (x - Convert.ToInt32(x) == 0 && (x / 10 >=1))
                 {
                     res += x;
                 }
