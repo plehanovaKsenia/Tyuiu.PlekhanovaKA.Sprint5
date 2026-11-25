@@ -1,7 +1,7 @@
-﻿using System.Globalization;
+﻿
 using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
-CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+
 namespace Tyuiu.PlekhanovaKA.Sprint5.Task5.V24.Lib
 {
     public class DataService : ISprint5Task5V24
