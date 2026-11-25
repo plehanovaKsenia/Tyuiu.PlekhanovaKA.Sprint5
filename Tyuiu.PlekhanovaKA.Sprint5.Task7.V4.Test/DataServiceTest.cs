@@ -8,7 +8,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task7.V4.Test
         [TestMethod]
         public void CheckValid()
         {
-            string path = @"/app/data/AssesmentData/C#/Sprint5Task7/InPutDataFileTask7V4.txt";
+            string path = @"С:\DataSprint5\InPutDataFileTask7V4.txt";
             DataService ds = new DataService();
             var res = ds.LoadDataAndSave(path);
             string wait = "######, World! This ### ###### #########.";

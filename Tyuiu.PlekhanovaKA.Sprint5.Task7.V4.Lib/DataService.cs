@@ -21,7 +21,7 @@ namespace Tyuiu.PlekhanovaKA.Sprint5.Task7.V4.Lib
                 }
 
             }
-            File.AppendAllText(path, res);
+            File.AppendAllText(@"С:\\DataSprint5\\OutPutDataFileTask7V4.txt", res);
             return res;
         }
     }
